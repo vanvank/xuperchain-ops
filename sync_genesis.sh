@@ -1,4 +1,6 @@
 #!/bin/bash
+# 同步创世块配置，从node1拷贝到其他节点
+
 set -x
 cd $CHAIN_BASE_DIR
 
