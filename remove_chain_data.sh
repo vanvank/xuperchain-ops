@@ -1,5 +1,7 @@
 #!/bin/bash
 
+./check_env.sh || exit 1
+
 cd $CHAIN_BASE_DIR
 end=$1
 

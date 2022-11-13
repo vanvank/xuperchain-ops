@@ -1,7 +1,9 @@
 #!/bin/bash
 # 同步创世块配置，从node1拷贝到其他节点
+#set -x
 
-set -x
+./check_env.sh || exit 1
+
 cd $CHAIN_BASE_DIR
 
 end=$1

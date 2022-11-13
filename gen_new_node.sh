@@ -1,5 +1,8 @@
 #!/bin/bash
 #set -x
+
+./check_env.sh || exit 1
+
 cd $CHAIN_BASE_DIR
 num=$1   # 第几个节点
 if [[ -z $1 ]];then
