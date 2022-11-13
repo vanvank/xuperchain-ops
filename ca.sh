@@ -1,6 +1,12 @@
 #!/bin/bash
 
-node=testnet/node$1
+
+if [[ -z $1 ]];then
+echo -n "请输入node num, 比如第3个node,就输入3: "
+read node
+fi
+
+node=$CHAIN_BASE_DIR/node$1
 
 openssl req -new \
 -config CA/openssl.cnf \

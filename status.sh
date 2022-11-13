@@ -1,5 +1,6 @@
 #!/bin/bash
 #set -x
+cd $CHAIN_BASE_DIR
 
 end=$1
 

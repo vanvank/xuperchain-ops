@@ -1,6 +1,11 @@
 #!/bin/bash
 #set -x
+cd $CHAIN_BASE_DIR
 end=$1
+if [[ -z $1 ]];then
+echo -n "请输入node num, 比如要操作前3个node,就输入3: "
+read end
+fi
 echo
 cd node1
 echo node1
