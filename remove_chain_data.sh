@@ -14,6 +14,7 @@ fi
 for i in $(seq 2 $end)
 do
 	rm -rf node$i/data/blockchain
+	rm -rf node$i/logs/*
 done
 
 echo "保险起见，第一个节点的data未删，请手动删除"

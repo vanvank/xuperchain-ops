@@ -15,7 +15,7 @@ openssl req -new \
 -key $node/data/netkeys/private.key \
 -out $node/data/netkeys/cert.csr
 
-openssl x509 -req -sha256 -days 3650 \
+openssl x509 -req -sha256 -days 1095 \
 -CA CA/ca.pem -CAkey CA/ca.key -CAcreateserial \
 -extfile CA/openssl.cnf -extensions v3_req \
 -in $node/data/netkeys/cert.csr \

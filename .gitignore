@@ -4,6 +4,7 @@ CA/ca.key
 CA/ca.pem
 CA/ca.srl
 CA/gen_new_ca_root_certificate/ca.*
+backup_keys/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
