@@ -11,7 +11,7 @@ node=$CHAIN_BASE_DIR/node$1
 
 openssl req -new \
 -config CA/openssl.cnf \
--subj "/C=CN/ST=BJ/L=BJ/O=Baidu/OU=BlockChain/CN=node/emailAddress=helloworld@baidu.com" \
+-subj "/C=CN/ST=GuangDong/L=Guangzhou/O=xinglan/OU=xinglan/CN=www.xlipfs.com" \
 -key $node/data/netkeys/private.key \
 -out $node/data/netkeys/cert.csr
 

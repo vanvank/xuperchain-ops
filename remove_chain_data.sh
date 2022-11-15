@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -x
 ./check_env.sh || exit 1
 
 cd $CHAIN_BASE_DIR
@@ -12,7 +13,7 @@ fi
 
 for i in $(seq 2 $end)
 do
-	rm -rf node$/data/blockchain
+	rm -rf node$i/data/blockchain
 done
 
 echo "保险起见，第一个节点的data未删，请手动删除"

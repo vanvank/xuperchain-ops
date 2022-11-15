@@ -1,3 +1,8 @@
+#
+CA/ca.csr
+CA/ca.key
+CA/ca.pem
+CA/ca.srl
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
