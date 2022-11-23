@@ -2,7 +2,7 @@
 #set -x
 
 ./check_env.sh || exit 1
-
+current_dir=$(pwd)
 cd $CHAIN_BASE_DIR
 num=$1   # 第几个节点
 if [[ -z $1 ]];then
@@ -26,5 +26,6 @@ rm -rf data/netkeys/cert.pem netkeys/private.key netkeys/net_private.key
 ./bin/xchain-cli netURL preview
 ./bin/xchain-cli netURL convert
 
+cd $current_dir
 echo "生成ca签名证书"
 bash ca.sh $num
