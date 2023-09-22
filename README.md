@@ -54,6 +54,10 @@
 
 `./nodes_status.sh 3`
 
+# 常用命令
+## 转账：  
+bin/xchain-cli transfer --to czojZcZ6cHSiDVJ4jFoZMB1PjKnfUiuFQ --amount 10 --keys data/keys/ -H 127.0.0.1:37101
+
 
 
 
